@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+    <!--{{{header-->
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+    <link rel="stylesheet" href="../srcHTML/blank/styles.css">
+    <link rel="stylesheet" href="../srcHTML/blank/reveal/reveal.css">
+    <link rel="stylesheet" href="../srcHTML/blank/reveal/fragments.css">
+    <link id=revealTheme rel="stylesheet" href="../srcHTML/blank/reveal/theme_white.css">
+    <script src="../srcHTML/blank/functions.js"></script> 
+</head>
+<body>
+    <select class="selectBox" id="dummy"><option>reveal</option></select>
+		<script>sourceDir="../srcHTML/blank/"</script>
+		<div class="reveal"> <div class="slides">
+    <!--}}}header-->
+
+<!-- {{{ primary-main -->
+<section id="mainSlide" data-background="#00000000">
+		<h5>vifm + shtaje usage</h5>
+		<ul>
+			<li><a href="#/basic-navigation">basic navigation</a></li>
+			<li><a href="#/system-keybindings">system keybindings</a></li>
+			<li><a href="#/file-management">file management</a></li>
+			<li><a href="#/generate-html">generate shtaje html files</a></li>
+			<li><a href="#/bookmarks">using bookmarks</a></li>
+			<li><a href="#/additional-features">additional features</a></li>
+		</ul>
+</section> <!-- }}}primary -->
+<!-- {{{ primary-basic navigation -->
+<section id="basic-navigation" data-background="#00000000">
+		<p> basic navigation <a href="#/mainSlide">(&#x2190)</a> </p>
+		<table>
+			<th>key</th>																	<th>function</th>
+			<tr>			<td><&#x2191> , &lt;k&gt; </td>			<td>item above</td>	</tr>
+			<tr> 			<td><&#x2193> , &lt;j&gt; </td>			<td>item below</td>	</tr>
+			<tr> 			<td><&#x2190> , &lt;h&gt; </td>			<td>parent directory</td>	</tr>
+			<tr> 			<td><&#x2192> , &lt;l&gt; </td>			<td>open</td>	</tr>
+			<tr> 			<td> &lt;tab&gt; </td>							<td>switch pane</td>	</tr>
+		</table>	
+</section> <!-- }}}primary -->
+<!-- {{{ primary-system keybindings -->
+<section id="system-keybindings" data-background="#00000000">
+		<p> system keybindings <a href="#/mainSlide">(&#x2190)</a> </p>
+		<table>
+			<th>key</th>																	<th>function</th>
+			<tr>			<td> &lt;esc&gt; </td>									<td>normal mode</td>	</tr>
+			<tr> 			<td> &lt;space&gt; </td>								<td>command mode</td>	</tr>
+			<tr> 			<td> &lt;v&gt; </td>										<td>select mode</td>	</tr>
+			<tr> 			<td> &lt;ctrl-d&gt; , &lt;,q&gt; </td>	<td>quit</td>	</tr>
+			<tr> 			<td> &lt;,1&gt; </td>										<td>light theme</td>	</tr>
+			<tr> 			<td> &lt;,2&gt; </td>										<td>dark theme</td>	</tr>
+		</table>	
+</section> <!-- }}}primary -->
+<!-- {{{ primary-file managment -->
+<section id="file-management" data-background="#00000000">
+<section> <!-- {{{secondary-normal mode -->
+		<p> file management (copy,move,create,delete) <a href="#/mainSlide">(&#x2190)</a> </p>
+		<div class="r-hstack">
+		<table>
+			<th>key</th>																	<th>normal mode</th>
+			<tr>			<td> &lt;yy&gt; </td>							<td>yank from current location</td>	</tr>
+			<tr> 			<td> &lt;p&gt; </td>							<td>paste at current location</td>	</tr>
+			<tr> 			<td> &lt;P&gt; </td>							<td>move to current location</td>	</tr>
+			<tr> 			<td> &lt;,nd&gt;</td>							<td>new directory</td>				</tr>
+			<tr> 			<td> &lt;DD&gt;</td>							<td>delete</td>				</tr>
+			<tr> 			<td> &lt;yp&gt; </td>							<td>make a copy on next pane</td>	</tr>
+			<tr> 			<td> &lt;yP&gt; </td>							<td>move to next pane</td>	</tr>
+		</table>	
+		<table>
+			<th>key</th>																	<th>v-select mode</th>
+			<tr>			<td> &lt;y&gt; </td>							<td>yank from current location</td>	</tr>
+			<tr><td> - </td><td> - </td></tr>
+			<tr><td> - </td><td> - </td></tr>
+			<tr><td> - </td><td> - </td></tr>
+			<tr> 			<td>&lt;D&gt;</td>								<td>delete</td>	</tr>
+			<tr> 			<td> &lt;yp&gt; </td>							<td>make a copy on next pane</td>	</tr>
+			<tr> 			<td> &lt;yP&gt; </td>							<td>move to next pane</td>	</tr>
+		</table>	
+		<table>
+		</table>	
+		</div> <!-- r-hstack -->
+</section> <!-- }}}secondary -->
+<section> <!-- {{{secondary-v-select mode -->
+		<p> file management (rename and find) <a href="#/mainSlide">(&#x2190)</a> </p>
+		<table>
+			<th>key</th>																	<th>function</th>
+			<tr>			<td> &lt;/&gt; </td>							<td>find within working directory</td>	</tr>
+			<tr> 			<td> &lt;n&gt;,&lt;N&gt; </td>		<td>find next / previous</td>	</tr>
+			<tr> 			<td> &lt;f&gt; </td>							<td>fuzzy find files within directory tree</td>	</tr>
+			<tr> 			<td> &lt;cw&gt;</td>							<td>rename file</td>				</tr>
+			<tr> 			<td> &lt;cc&gt; </td>							<td>rename file(s) in editor<br>(also works in select mode)</td>	</tr>
+		</table>	
+</section> <!-- }}}secondary -->
+</section> <!-- }}}primary -->
+<!-- {{{ primary-generate html -->
+<section id="generate-html" data-background="#00000000">
+<section> <!-- {{{secondary-harbor/warehouse -->
+		<p> generate shtaje html files (harbor/warehouse) <a href="#/mainSlide">(&#x2190)</a> </p>
+		<table>
+			<th>key</th>																<th>generate html</th>
+			<tr>			<td> &lt;,hf&gt; </td>						<td>frame sequencer</td>	</tr>
+			<tr> 			<td> &lt;,hv&gt; </td>						<td>vid picker</td>	</tr>
+			<tr> 			<td> &lt;,hw&gt; </td>						<td>peep wave</td>	</tr>
+			<tr> 			<td> &lt;,hc&gt;</td>							<td>pic and choose</td>				</tr>
+			<tr> 			<td> &lt;,hp&gt;</td>							<td>pick and place</td>				</tr>
+			<tr> 			<td> &lt;,hb&gt; </td>						<td>blank</td>	</tr>
+			<tr>			<td> &lt;,hk&gt; </td>						<td>katalog</td>	</tr>
+		</table>	
+		<div style="font-size: 0.5em; text-align: start">
+			<p>Navigate to /home/Scripts and run 'getSampleAssets.sh'. </p>
+			<p> When prompted, copy the link found at: <a href="https://www.mediafire.com/file/bpb97xan7bbhuzw/sampleAssets.zip/file" target="_blank">mediafire</a></p>
+			<p style="font-size:0.8em;">(alternate dummy filenames are at ~/.dist/dummy)</p>
+		</div>
+</section> <!-- }}}secondary -->
+<section> <!-- {{{secondary-localized -->
+		<p> generate shtaje html files (localized) <a href="#/mainSlide">(&#x2190)</a> </p>
+		<table>
+			<th>key</th>																<th>generate html</th>
+			<tr>			<td> &lt;,ll&gt; </td>						<td>(pull srcHTML)</td>	</tr>
+			<tr>			<td> &lt;,lf&gt; </td>						<td>frame sequencer</td>	</tr>
+			<tr> 			<td> &lt;,lv&gt; </td>						<td>vid picker</td>	</tr>
+			<tr> 			<td> &lt;,lw&gt; </td>						<td>peep wave</td>	</tr>
+			<tr> 			<td> &lt;,lc&gt;</td>							<td>pic and choose</td>				</tr>
+			<tr> 			<td> &lt;,lp&gt;</td>							<td>pick and place</td>				</tr>
+			<tr> 			<td> &lt;,lb&gt; </td>						<td>blank</td>	</tr>
+			<tr>			<td> &lt;,lk&gt; </td>						<td>katalog</td>	</tr>
+		</table>	
+</section> <!-- }}}secondary -->
+</section> <!-- }}}primary -->
+<!-- {{{ primary-using bookmarks -->
+<section id="bookmarks" data-background="#00000000">
+		<p>pre-defined bookmarks <a href="#/mainSlide">(&#x2190)</a> </p>
+		<div class="r-stretch" style="font-size:0.8em">
+		<table>
+			<th>key</th>																	<th>jump to</th>
+			<tr>			<td> &lt;b.&gt; </td>							<td>/home/volume</td>	</tr>
+			<tr>			<td> &lt;bs.&gt; </td>						<td>/home/struct</td>	</tr>
+			<tr>			<td> &lt;brm&gt; </td>						<td>/home/struct/reference/model</td>	</tr>
+			<tr>			<td> &lt;bw.&gt; </td>						<td>/home/volume/WAREHOUSE</td>	</tr>
+			<tr>			<td> &lt;bwm&gt; </td>						<td>/home/volume/WAREHOUSE/LI1_Mam</td>	</tr>
+			<tr>			<td> &lt;bwc&gt; </td>						<td>/home/volume/WAREHOUSE/LI2_Choi</td>	</tr>
+			<tr>			<td> &lt;bwl&gt; </td>						<td>/home/volume/WAREHOUSE/LI3_La</td>	</tr>
+			<tr>			<td> &lt;bh.&gt; </td>						<td>/home/volume/HARBOR</td>	</tr>
+			<tr>			<td> &lt;bhm&gt; </td>						<td>/home/volume/HARBOR/LI1_Mam</td>	</tr>
+			<tr>			<td> &lt;bhc&gt; </td>						<td>/home/volume/HARBOR/LI2_Choi</td>	</tr>
+			<tr>			<td> &lt;bhl&gt; </td>						<td>/home/volume/HARBOR/LI3_La</td>	</tr>
+		</table>	
+
+		</div>
+</section> <!-- }}}primary -->
+<!-- {{{ primary-addiional features -->
+<section id="additional-features" data-background="#00000000">
+		<p> additional features <a href="#/mainSlide">(&#x2190)</a> </p>
+		<table>
+			<th>key</th>															<th>function</th>
+			<tr>			<td> &lt;xf&gt; </td>						<td>open using default GUI app</td>	</tr>
+			<tr>			<td> &lt;s&gt; </td>						<td>go to shell</td>	</tr>
+			<tr>			<td> &lt;S&gt; </td>						<td>sort options</td>	</tr>
+			<tr> 			<td> &lt;w&gt; </td>						<td>show file info options</td>	</tr>
+			<tr> 			<td> &lt;,xz&gt; </td>					<td>unzip file</td>	</tr>
+			<tr> 			<td> &lt;ga&gt; </td>						<td>calculate size</td>	</tr>
+			<tr> 			<td> &lt;,sd&gt;</td>						<td>serve current directory on :8989<cr>(requires nodejs)</td>	</tr>
+		</table>	
+</section> <!-- }}}primary -->
+
+    <!--{{{footer-->
+	</div> </div> <!-- reveal slides -->
+	<script src="../srcHTML/blank/reveal/reveal.js"></script>
+	<script src="../srcHTML/blank/reveal/plugin/zoom/zoom.js"></script>
+	<script>
+let currentTheme="dark"
+let darkTheme="../srcHTML/blank/reveal/theme_white.css"
+let lightTheme="../srcHTML/blank/reveal/theme_black.css"
+		Reveal.initialize({
+			width: 1800, height: 900,
+			transition: 'slide', //none/fade/slide/convex/concave/zoom
+			controls: true, center: true, hash: false, loop: false,
+			slideNumber: true, help: false,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [ RevealZoom ]
+		});
+	</script>
+</body>
+</html>
+    <!--}}}footer-->

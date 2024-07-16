@@ -1,0 +1,3 @@
+command prompt (run as administrator)
+
+wsl --install

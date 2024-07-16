@@ -1,0 +1,30 @@
+    <!--{{{head-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FrameSeq</title> 
+    <script src="/home/Lessons/EB/LI5_Shtaje/PJ0_build/srcHTML/FrameSeq/functions.js"></script> 
+    <script type="text/javascript">
+        function setToolSource(urlvalue) {
+            window.open(urlvalue,'_blank');
+        }
+    </script>
+    <link rel="stylesheet" href="/home/Lessons/EB/LI5_Shtaje/PJ0_build/srcHTML/FrameSeq/styles.css">
+</head>
+    <!--}}}head-->
+<body>
+    <!--{{{outerFrame-->
+ <img class="fullPage" id="backgroundX" src="/home/Lessons/EB/LI5_Shtaje/PJ0_build/srcHTML/FrameSeq/background.jpg">
+<iframe class="subframe" id="myIframe" src="  "></iframe> 
+
+    <select id="toolSelect" onClick="setToolSource(this.value)" size=1 autofocus> 
+      <option value="./">localDir</option> 
+   </select>
+    <!--}}}outerFrame-->
+    <select id="seqSelect" onChange="setSeqSource()" size=1> 
+        <option value="./help.html">leqx</option> 
+        <option value="./index.html">leqx</option> 
+
+   </select>
+</body>
+</html>

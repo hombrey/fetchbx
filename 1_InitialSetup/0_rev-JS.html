@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+    <!--{{{header-->
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+    <link rel="stylesheet" href="../srcHTML/blank/styles.css">
+    <link rel="stylesheet" href="../srcHTML/blank/reveal/reveal.css">
+    <link rel="stylesheet" href="../srcHTML/blank/reveal/fragments.css">
+    <link id=revealTheme rel="stylesheet" href="../srcHTML/blank/reveal/theme_white.css">
+    <script src="../srcHTML/blank/functions.js"></script> 
+</head>
+<body>
+    <select class="selectBox" id="dummy"><option>reveal</option></select>
+		<script>sourceDir="../srcHTML/blank/"</script>
+		<div class="reveal"> <div class="slides">
+    <!--}}}header-->
+
+<!-- landing page -->
+	<section id="mainSlide" data-background="#00000000"> <!-- {{{primary -->
+		<p>Let's build your shtaje</p>
+			<div class="r-hstack stretch">
+				<img src="./img/1_builder.webp" style="width: 50%">
+
+				<div>
+					<a href="#/setupWindows">
+						<h3> Windows </h3>
+						<p>&#x2192</p> <!-- right arrow -->
+					</a>
+
+					<a href="#/setupMac">
+						<h3> Mac </h3>
+						<p>&#x2192 &#x2192 </p> <!-- right arrow -->
+					</a>
+				</div>
+			</div> <!-- r-hstack -->
+		<p>(https://hombrey.github.io/fetchbx/)</p>
+	</section> <!-- }}}primary -->
+
+<!-- windows instructions-->
+<section id="setupWindows" data-background="#00000000"> <!-- {{{primary -->
+	<section style="text-align:start"> <!-- {{{secondary - overview -->
+			<div style="position:absolute; top: 10px; right: 10px; font-size: 0.6em">
+				<a href="#/mainSlide"> &#x2190 return</a>
+			</div>
+		<div class="r-vstack stretch">
+			<div>If you're on team Windows, do ths:</div>
+			<ol>
+				<li>activate WSL1</li>
+				<li>prepare shtaje environment</li>
+				<li>build and run shtaje</li>
+			</ol>
+			<p>&#x2193 &#x2193 &#x2193</p> <!-- down arrow -->
+		</div> <!-- r-vstack -->
+	</section> <!-- }}}secondary -->		
+<section style="text-align:start;"> <!-- {{{secondary-activate WSL1 -->
+	<h5>1. activate WSL</h5>	
+	<div class="r-stretch" style="font-size:0.8em">
+			<p>1.1. Enable Windows Features: (a) WSL and (b)VM Platform.  </p>	
+			<p style="font-size: 0.7em;">
+&ensp; &ensp;- Go to "Turn Windows features on or off" (search for it in the Start menu). <a href="./img/2_TurnOnWSL.webp" target="_blank">(see here)</a><br>
+&ensp; &ensp;- Check the boxes next to "Windows Subsystem for Linux (WSL)" and "Virtual Machine Platform".<br>
+&ensp; &ensp;- Click "OK" and wait for the process to complete.<br>
+			</p>
+			<p>1.2. Restart the computer</p>
+			<p>1.3. Open Command Prompt as an Administrator</p>
+			<p style="font-size: 0.7em;">
+&ensp; &ensp;- Search for "cmd" in the Start menu. <br>
+&ensp; &ensp;- Right-click on "Command Prompt" and select "Run as administrator".
+			</p>
+			<p>1.4. Execute this command to ensure WSL1:</p>
+			<pre><code data-trim data-noescape>
+wsl --set-default-version 1
+			</code></pre>
+			<p>1.5. Run this command to install Ubuntu:</p>
+			<pre><code data-trim data-noescape>
+wsl --install -d Ubuntu
+			</code></pre>
+			<p>1.6. Provide new USERNAME and PASSWORD </p>
+			<p>1.7. You may exit the terminal after this </p>
+	</div>
+</section> <!-- }}}secondary -->
+<section style="text-align:start"> <!-- {{{secondary-nix+shtaje -->
+	<h5>2. prepare shtaje environment</h5>	
+	<div class="r-stretch" style="font-size:0.8em">
+			<p>2.1. Launch 'Ubuntu' from the start menu</p>
+			<p>2.2. run this command(to update ubuntu): <a onclick="copyClick('aptUpdate')">(click to copy)</a></p>	
+			<pre><code data-trim data-noescape>
+sudo apt update && sudo apt upgrade -y && sudo apt install unzip -y
+			</code></pre>
+			<p> 2.3. run this command(get and unzip baxtaje): <a onclick="copyClick('getbaxtaje')">(click to copy)</a> </p>
+					<pre style="font-size:0.45em"><code data-trim data-noescape>
+cd ~ && curl https://hombrey.github.io/fetchbx/baxtaje.zip -o baxtaje.zip\ 
+&& unzip baxtaje.zip && rm baxtaje.zip
+					</code></pre>
+			<p>2.4. run this command (install apps): <a onclick="copyClick('noNix')">(click to copy)</a> </p>
+			<pre><code data-trim data-noescape>
+~/baxtaje/Scripts/nixtall/noNix.sh
+			</code></pre>
+			<p>2.5. exit the 'Ubuntu' program</p>
+	</div>
+</section> <!-- }}}secondary -->
+<section style="text-align:start"> <!-- {{{secondary-build and run shtaje -->
+	<h5>3. build and run shtaje</h5>	
+	<div class="r-stretch" >
+			<p>3.1. launch "Ubuntu" from the start menu</p>
+			<p>3.2. run this command (verify nix installation) </p>
+				<pre><code data-trim data-noescape>
+nix --version
+		</code></pre>
+			<p>3.3. Finally, run this command to enter into vifm (the initial setup will take time): </p>
+				<pre><code data-trim data-noescape>
+shtaje
+				</code></pre>
+	</div>
+</section> <!-- }}}secondary -->
+</section> <!-- }}}primary -->
+
+<!-- mac instructions -->
+<section id="setupMac" data-background="#00000000"> <!-- {{{primary -->
+	<section> <!-- {{{secondary-macOverview -->
+			<div style="position:absolute; top: 10px; right: 10px; font-size: 0.6em">
+				<a href="#/mainSlide"> &#x2190 return </a>
+			</div>
+		<div class="r-vstack stretch">
+				<div>Team mac, follow these steps:</div>
+				<ol>
+						<li>prepare nix+shtaje environment</li>
+						<li>build and run shtaje</li>
+				</ol>
+				<p>&#x2193 &#x2193 &#x2193</p> <!-- down arrow -->
+		</div> <!-- r-vstack -->
+
+	</section> <!-- }}}secondary -->		
+<section style="text-align:start"> <!-- {{{secondary-nix+shtaje environment -->
+	<h5>1. prepare nix and shtaje environment</h5>
+	<div class="r-stretch" >
+		<p>1.1. launch the terminal</p>
+		<p>1.2. run this command(get and unzip baxtaje): <a onclick="copyClick('getbaxtaje')">(click to copy)</a> </p>
+					<pre style="font-size:0.45em"><code data-trim data-noescape>
+cd ~ && curl https://hombrey.github.io/fetchbx/baxtaje.zip -o baxtaje.zip\ 
+&& unzip baxtaje.zip && rm baxtaje.zip
+					</code></pre>
+			<p>1.3. run this command (install nix): <a onclick="copyClick('nixMac')">(click to copy)</a> </p>
+			<pre><code data-trim data-noescape>
+~/baxtaje/Scripts/nixtall/onMac.sh
+			</code></pre>
+			<p>1.4. exit the terminal</p>
+
+	</div>
+</section> <!-- }}}secondary -->
+<section style="text-align:start"> <!-- {{{secondary-pull shtajebuilder package -->
+	<h5>2. pull shtajebuilder container</h5>	
+	<div class="r-stretch" >
+				<br/>
+				<p>2.1. re-launch the terminal app</p>
+				<p>2.2. run this command (verify nix installation) </p>
+					<pre><code data-trim data-noescape>
+nix --version
+			</code></pre>
+				<p>2.3. Finally, run this command to enter into vifm (the initial setup will take time): </p>
+					<pre><code data-trim data-noescape>
+shtaje
+					</code></pre>
+	</div>
+</section> <!-- }}}secondary -->
+</section> <!-- }}}primary -->
+
+<!-- {{{ special script-->
+<script>
+function copyClick(stringID) {
+  // Get the text field
+	let snippet;
+
+	if (stringID=="aptUpdate") snippet='sudo apt update && sudo apt upgrade && sudo apt install unzip -y';
+	if (stringID=="getbaxtaje") snippet='cd ~ && curl https://hombrey.github.io/fetchbx/baxtaje.zip -o baxtaje.zip&& unzip baxtaje.zip && rm baxtaje.zip';
+	if (stringID=="nixWsl") snippet='~/baxtaje/Scripts/nixtall/onWSL.sh';
+	if (stringID=="noNix") snippet='~/baxtaje/Scripts/nixtall/noNix.sh';
+	if (stringID=="nixMac") snippet='~/baxtaje/Scripts/nixtall/onMac.sh';
+
+	navigator.clipboard.writeText(snippet);
+  
+  // Alert the copied text
+  alert("Copied the text:\n"+snippet);
+}
+</script>
+<!-- }}} -->
+
+
+    <!--{{{footer-->
+	</div> </div> <!-- reveal slides -->
+	<script src="../srcHTML/blank/reveal/reveal.js"></script>
+	<script src="../srcHTML/blank/reveal/plugin/zoom/zoom.js"></script>
+	<script>
+let currentTheme="dark"
+let darkTheme="../srcHTML/blank/reveal/theme_white.css"
+let lightTheme="../srcHTML/blank/reveal/theme_black.css"
+		Reveal.initialize({
+			width: 1800, height: 900,
+			transition: 'convex', //none/fade/slide/convex/concave/zoom
+			controls: false, center: true, hash: false, loop: true,
+			slideNumber: true, help: false,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [ RevealZoom ]
+		});
+	</script>
+</body>
+</html>
+    <!--}}}footer-->

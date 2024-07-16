@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+    <!--{{{header-->
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+    <link rel="stylesheet" href="../srcHTML/blank/styles.css">
+    <link rel="stylesheet" href="../srcHTML/blank/reveal/reveal.css">
+    <link rel="stylesheet" href="../srcHTML/blank/reveal/fragments.css">
+    <link id=revealTheme rel="stylesheet" href="../srcHTML/blank/reveal/theme_white.css">
+    <script src="../srcHTML/blank/functions.js"></script> 
+</head>
+<body>
+    <select class="selectBox" id="dummy"><option>reveal</option></select>
+		<script>sourceDir="../srcHTML/blank/"</script>
+    <!--}}}header-->
+	<div class="reveal"> <div class="slides">
+
+<!-- {{{ primary-mainSlide -->
+<section id="mainSlide" data-background="#00000000">
+		<h5>file structures of the different shtaje tools</h5>
+		<ul>
+			<li><a href="#/vidpicker">vid picker</a></li>
+			<li><a href="#/peepwave">peep wave</a></li>
+			<li><a href="#/pic-and-choose">pic and choose</a></li>
+			<li><a href="#/pick-and-place">pick and place</a></li>
+			<li><a href="#/frameseq">frame sequencer</a></li>
+			<li><a href="#/katalog">katalog</a></li>
+			<li><a href="#/blank">blank</a></li>
+		</ul>
+</section> <!-- }}}primary -->
+<!-- {{{ primary-vidpicker -->
+<section id="vidpicker" data-background="#00000000">
+		<p> anatomy of vid picker <a href="#/mainSlide">(&#x2190)</a> </p>
+		<div class="r-stretch" style="font-size:0.8em">
+		<table>
+			<th colspan = "2" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td> &#127760; x_horiz.html </td>	</tr>
+			<tr><td>				</td>			<td> &#127902; 1_any-name-of-vid.mp4</td>	</tr>
+			<tr><td>				</td>			<td> &#127902; 2_any-other-name-of-vid.mp4</td>	</tr>
+			<tr><td>				</td>			<td> &#8942;</td></tr>
+			<tr><td>				</td>			<td> &#127902; #_some-other-vid.mp4</td>	</tr>
+		</table>	
+		</div>
+</section> <!-- }}}primary -->
+<!-- {{{ primary-peepwave -->
+<section id="peepwave" data-background="#00000000">
+<section> <!-- {{{secondary-basic -->
+		<p> anatomy of peep wave(basic) <a href="#/mainSlide">(&#x2190)</a> </p>
+		<div class="r-stretch" style="font-size:0.8em">
+		<table>
+			<th colspan = "2" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td> &#127760; xPeepwave.html </td>	</tr>
+			<tr><td>				</td>			<td> &#128247; 1_any-name-of-pic.jpg</td>	</tr>
+			<tr><td>				</td>			<td> &#128247; 2_any-other-pic.jpg</td>	</tr>
+			<tr><td>				</td>			<td> &#8942;</td></tr>
+			<tr><td>				</td>			<td> &#128247; #_some-other-pic.jpg</td>	</tr>
+		</table>	
+		</div>
+		<div style="font-size: 0.5em; text-align: start">
+			<p style="font-size:0.8em;">(recognized image formats: jpg, png, gif, webp)</p>
+		</div>
+</section> <!-- }}}secondary -->
+<section> <!-- {{{secondary-wiithAudio -->
+		<p> anatomy of peep wave(with audio) <a href="#/mainSlide">(&#x2190)</a> </p>
+		<div class="r-stretch" style="font-size:0.7em">
+		<table>
+			<th colspan = "3" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td colspan = "2"  >&#127760; xPeepwave.html </td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 1_any-name-of-pic.jpg</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 2_any-other-pic.jpg</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#8942;</td></tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; #_some-other-pic.jpg</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; wav</td>	</tr>
+			<tr><td></td><td> &#8735;</td>			<td colspan = "1"  >&#127911; 1_any-name-of-pic.mp3</td>	</tr>
+			<tr><td></td><td>				</td>			<td colspan = "1"  >&#127911; 2_any-other-pic.mp3</td>	</tr>
+			<tr><td></td><td>				</td>			<td colspan = "1"  >&#8942;</td></tr>
+			<tr><td></td><td>				</td>			<td colspan = "1"  >&#127911; #_some-other-pic.mp3</td>	</tr>
+		</table>	
+		</div>
+		<div style="font-size: 0.5em; text-align: start">
+			<p style="font-size:0.8em;">(mp3 is the only recognized audio format)</p>
+		</div>
+</section> <!-- }}}secondary -->
+<section> <!-- {{{secondary-wiithAltImg -->
+		<p> anatomy of peep wave(with alternate images) <a href="#/mainSlide">(&#x2190)</a> </p>
+		<div class="r-stretch" style="font-size:0.65em">
+		<table>
+			<th colspan = "3" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td colspan = "2"  >&#127760; xPeepwave.html </td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 1_any-name-of-pic.jpg</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 2_any-other-pic.png</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#8942;</td></tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; #_some-other-pic.webp</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; wav</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; alt</td>	</tr>
+			<tr><td></td><td> &#8735;</td>			<td colspan = "1"  >&#128247; 1_any-name-of-pic.jpg</td>	</tr>
+			<tr><td></td><td>				</td>				<td colspan = "1"  >&#128247; 2_any-other-pic.png</td>	</tr>
+			<tr><td></td><td>				</td>				<td colspan = "1"  >&#8942;</td></tr>
+			<tr><td></td><td>				</td>				<td colspan = "1"  >&#128247; #_some-other-pic.webp</td>	</tr>
+		</table>	
+		</div>
+</section> <!-- }}}secondary -->
+<section> <!-- {{{secondary-wiithAltWav -->
+		<p> anatomy of peep wave(w/ alt image & alt audio) <a href="#/mainSlide">(&#x2190)</a> </p>
+		<div class="r-stretch" style="font-size:0.65em">
+		<table>
+			<th colspan = "3" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td colspan = "2"  >&#127760; xPeepwave.html </td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 1_any-name-of-pic.jpg</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 2_any-other-pic.png</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#8942;</td></tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; #_some-other-pic.webp</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; wav</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; alt</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; altwav</td>	</tr>
+			<tr><td></td><td> &#8735;</td>			<td colspan = "1"  >&#128247; 1_any-name-of-pic.mp3</td>	</tr>
+			<tr><td></td><td>				</td>				<td colspan = "1"  >&#128247; 2_any-other-pic.mp3</td>	</tr>
+			<tr><td></td><td>				</td>				<td colspan = "1"  >&#8942;</td></tr>
+			<tr><td></td><td>				</td>				<td colspan = "1"  >&#128247; #_some-other-pic.mp3</td>	</tr>
+		</table>	
+		</div>
+</section> <!-- }}}secondary -->
+</section> <!-- }}}primary -->
+<!-- {{{ primary-picAndChoose -->
+<section id="pic-and-choose" data-background="#00000000">
+		<p> anatomy of pic and choose <a href="#/mainSlide">(&#x2190)</a> </p>
+		<div class="r-stretch" style="font-size:0.6em">
+		<table>
+			<th colspan = "3" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td colspan = "2"  >&#127760; x_choose.html </td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 1_imageA-that-matches-choice1.jpg</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 1_imageB-that-matches-choice1.jpg</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#8942;</td></tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 1_imageX-that-matches-choice1.jpg</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 2_imageA-that-matches-choice2.jpg</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 2_imageB-that-matches-choice2.jpg</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#8942;</td></tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 2_imageX-that-matches-choice2.jpg</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 3_imageX-that-matches-choice3.jpg</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; 4_imageX-that-matches-choice4.jpg</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; choices</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#128247; 1.png &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 2.png</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 3.png</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 4.png</td>	</tr>
+		</table>	
+		</div>
+		<div style="font-size: 0.5em; text-align: start">
+			<p style="font-size:0.8em;">(filenames under the "choices" subdirectory are rigid. They should always be 1.png, 2.png, 3.png, and 4.png)</p>
+		</div>
+</section> <!-- }}}primary -->
+<!-- {{{ primary-pickAndPlace -->
+<section id="pick-and-place" data-background="#00000000">
+	<section> <!-- {{{secondary- FC6 -->
+		<p> anatomy of pick and place (6 flashcards) <a href="#/mainSlide">(&#x2190)</a> </p>
+		<div class="r-stretch" style="font-size:0.6em">
+		<table>
+			<th colspan = "3" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td colspan = "2"  >&#127760; x_Pick.html </td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; 1_front</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#128247; 1.webp &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 2.webp</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#8942;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 7.webp</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; 2_back</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#128247; 1.webp &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 2.webp</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#8942;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 7.webp</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; wav</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127911; prompt1.mp3 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#127911; prompt2.mp3</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#8942;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#127911; prompt7.mp3</td>	</tr>
+		</table>	
+		</div>
+		<div style="font-size: 0.5em; text-align: start">
+			<p style="font-size:0.8em;">(filenames under base directory are rigid)</p>
+		</div>
+	</section> <!-- }}}secondary -->
+	<section> <!-- {{{secondary- FC8 -->
+		<p> anatomy of pick and place (8 flashcards) <a href="#/mainSlide">(&#x2190)</a> </p>
+		<div class="r-stretch" style="font-size:0.6em">
+		<table>
+			<th colspan = "3" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td colspan = "2"  >&#127760; x_Pick.html </td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; 1_front</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#128247; 1.webp &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 2.webp</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#8942;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 9.webp</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; 2_back</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#128247; 1.webp &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 2.webp</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#8942;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 9.webp</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; wav</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127911; prompt1.mp3 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#127911; prompt2.mp3</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#8942;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#127911; prompt9.mp3</td>	</tr>
+		</table>	
+		</div>
+		<div style="font-size: 0.5em; text-align: start">
+			<p style="font-size:0.8em;">(There's also a tail for 10 FCs. Select the appropriate tail during html generation)</p>
+		</div>
+	</section> <!-- }}}secondary -->
+	<section> <!-- {{{secondary- jigsaw 6 -->
+		<p> anatomy of pick and place (6-piece jigsaw) <a href="#/mainSlide">(&#x2190)</a> </p>
+		<div class="r-stretch" style="font-size:0.6em">
+		<table>
+			<th colspan = "3" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td colspan = "2"  >&#127760; x_Pick.html </td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128247; mat.png</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; 1_front</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#128247; 1.webp &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 2.webp</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#8942;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 6.webp</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; 2_back</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#128247; 1.webp &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 2.webp</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#8942;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#128247; 6.webp</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; wav</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127911; prompt1.mp3 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#127911; prompt2.mp3</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#8942;</td>	</tr>
+			<tr><td></td><td>			  </td>			<td colspan = "1"  >&#127911; prompt6.mp3</td>	</tr>
+		</table>	
+		</div>
+		<div style="font-size: 0.5em; text-align: start">
+			<p style="font-size:0.8em;">(There's also a tail for 9 jigsaw pieces. Select the appropriate tail during html generation)</p>
+		</div>
+	</section> <!-- }}}secondary -->
+</section> <!-- }}}primary -->
+<!-- {{{ primary-frame sequencer -->
+<section id="frameseq" data-background="#00000000">
+		<p> anatomy of frame sequencer <a href="#/mainSlide">(&#x2190)</a> </p>
+		<div class="r-stretch" style="font-size:0.8em">
+		<table>
+			<th colspan = "3" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td colspan = "2"  >&#127760; 0_F-X.html </td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; 0_subActivityA</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; generated.html &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; 10_subActivityB</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; generated.html &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; 15_subActivityC</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; generated.html &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#8942;</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  >&#128194; ##_subActivityX</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; generated.html &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td>				</td>			<td colspan = "2"  style="opacity: 0.3;">&#128194; srcHTML</td>	</tr>
+		</table>	
+		</div>
+		<div style="font-size: 0.5em; text-align: start">
+			<p style="font-size:0.8em;">(place a copy of shtaje's srcHTML toolset on the base directory when creating a localized presentation)</p>
+		</div>
+</section> <!-- }}}primary -->
+<!-- {{{ primary-katalog -->
+<section id="katalog" data-background="#00000000">
+		<p> anatomy of katalog<a href="#/mainSlide">(&#x2190)</a> </p>
+		<div class="r-stretch r-hstack" style="font-size:0.5em">
+		<table>
+			<th colspan = "4" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td colspan = "3"  >&#127760; index.html </td>	</tr>
+			<tr><td>				</td>			<td colspan = "3"  >&#128194; LI1_Mam</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; MH001_LessonName1 &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; 0_F-X.html &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#8942;</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; MH00x_LessonNamex &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; 0_F-X.html &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td>				</td>			<td colspan = "3"  >&#128194; LI2_Choi</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; CH001_LessonName1 &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; 0_F-X.html &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#8942;</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; CH00x_LessonNamex &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; 0_F-X.html &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td>				</td>			<td colspan = "3"  >&#128194; LI3_La</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; LH001_LessonName1 &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; 0_F-X.html &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#8942;</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; LH00x_LessonNamex &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; 0_F-X.html &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+		</table>	
+
+		<table>
+			<th colspan = "4" > </th>
+			<tr><td> &#8735; </td>			<td colspan = "3"  >&#128194; LI4_Others</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; 1_LessonName1 &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; 0_F-X.html &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#8942;</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; #_LessonNamex &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; 0_F-X.html &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td>				</td>			<td colspan = "3"  >&#128194; reference</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; model &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; 0_F-X.html &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td>				</td>			<td colspan = "3"  >&#128194; SongsHTML</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; SK0_attach &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td></td><td> &#8735;</td>		<td colspan = "1"  >&#127760; 0_F-X.html &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td>				</td>			<td colspan = "3"  >&#128194; srcHTML</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; FrameSeq &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; Klyne &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; PeepWave &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#8942;</td>	</tr>
+			<tr><td></td><td> &#8735;</td>		<td colspan = "2"  >&#128194; vidPicker &emsp;&emsp;&emsp;&emsp;&emsp;</td>	</tr>
+
+		</table>	
+		</div>
+</section> <!-- }}}primary -->
+<!-- {{{ primary-blank -->
+<section id="blank" data-background="#00000000">
+<section> <!-- {{{secondary- void and reveal-->
+		
+		<p> anatomy of blank (void)<a href="#/mainSlide">(&#x2190)</a> </p>
+		<div style="font-size:0.8em">
+		<table>
+			<th colspan = "2" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td> &#127760; void.html </td>	</tr>
+		</table>	
+		</div>
+			<br><br><br>
+		<p> anatomy of blank (reveal)<a href="#/mainSlide">(&#x2190)</a> </p>
+		<div style="font-size:0.8em">
+		<table>
+			<th colspan = "2" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td> &#127760; 0_rev-JS.html </td>	</tr>
+		</table>	
+		</div>
+</section> <!-- }}}secondary -->
+<section> <!-- {{{secondary- viewPDF-->
+		
+		<p> anatomy of blank (view document)<a href="#/mainSlide">(&#x2190)</a> </p>
+		<div style="font-size:0.8em">
+		<table>
+			<th colspan = "2" > &#128194; base directory</th>
+			<tr><td> &#8735;</td>			<td> &#127760; 0_viewDoc.html </td>	</tr>
+			<tr><td>				</td>			<td> &#128196; a-PDF-file.pdf </td>	</tr>
+		</table>	
+		</div>
+</section> <!-- }}}secondary -->
+</section> <!-- }}}primary -->
+
+<!-- {{{ascii reference -->
+<!--
+folder &#128194; 
+video &#127902;
+picture &#128247;
+audio &#127911;
+browser		&#127760;
+srcHTML &#128268;
+vertical elipsis &#8942;
+-->
+<!-- }}}ascii reference -->
+    <!--{{{footer-->
+	</div> </div> <!-- reveal slides -->
+	<!-- {{{custom styles -->
+<style>
+table, td, tr {
+	border-style: hidden; 
+} /* table, td, tr */
+</style>
+	<!-- }}}custom styles -->
+
+	<script src="../srcHTML/blank/reveal/reveal.js"></script>
+	<script src="../srcHTML/blank/reveal/plugin/zoom/zoom.js"></script>
+	<script>
+let currentTheme="dark"
+let darkTheme="../srcHTML/blank/reveal/theme_white.css"
+let lightTheme="../srcHTML/blank/reveal/theme_black.css"
+		Reveal.initialize({
+			width: 1800, height: 900,
+			transition: 'slide', //none/fade/slide/convex/concave/zoom
+			controls: true, center: true, hash: false, loop: false,
+			slideNumber: true, help: false,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [ RevealZoom ]
+		});
+	</script>
+</body>
+</html>
+    <!--}}}footer-->
